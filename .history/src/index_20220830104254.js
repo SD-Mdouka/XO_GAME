@@ -3,15 +3,15 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { ModalState } from "./component/context/ModalContext";
-import { GameContext, GameState } from "./component/context/GameContext";
+import { GameConetext } from "./component/context/GameContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ModalState>
-      <GameState>
+      <GameConetext>
         <App />
-      </GameState>
+      </GameConetext>
     </ModalState>
   </React.StrictMode>
 );

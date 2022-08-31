@@ -9,10 +9,10 @@ const App = () => {
   return (
     <div className="App">
       <div className="container">
-        {screen === "start" && <Start />}
+        {screen == !"start" && <Start />}
         {screen === "game" && <Board />}
       </div>
-      <Modal />
+      {/* <Modal /> */}
     </div>
   );
 };

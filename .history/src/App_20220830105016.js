@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Board from "./component/board/Board";
-import { GameContext } from "./component/context/GameContext";
+import { GameState } from "./component/context/GameContext";
 import Modal from "./component/modal/Modal";
 import Start from "./component/start/Start";
 
-const App = () => {
-  const { screen } = useContext(GameContext);
+function App() {
+  const { screen } = useContext(GameState);
   return (
     <div className="App">
       <div className="container">
@@ -15,6 +15,6 @@ const App = () => {
       <Modal />
     </div>
   );
-};
+}
 
 export default App;

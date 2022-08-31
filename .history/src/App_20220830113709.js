@@ -5,12 +5,13 @@ import Modal from "./component/modal/Modal";
 import Start from "./component/start/Start";
 
 const App = () => {
-  const { screen } = useContext(GameContext);
+  // const { screen } = useContext(GameContext);
   return (
     <div className="App">
       <div className="container">
-        {screen === "start" && <Start />}
-        {screen === "game" && <Board />}
+        {/* {screen === "start" && <Start />}
+        {screen === "game" && <Board />} */}
+        goog
       </div>
       <Modal />
     </div>

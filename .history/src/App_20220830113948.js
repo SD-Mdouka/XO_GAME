@@ -11,8 +11,9 @@ const App = () => {
       <div className="container">
         {screen === "start" && <Start />}
         {screen === "game" && <Board />}
+        goog
       </div>
-      <Modal />
+      {/* <Modal /> */}
     </div>
   );
 };
